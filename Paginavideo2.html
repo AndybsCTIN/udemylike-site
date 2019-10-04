@@ -10,11 +10,19 @@
 
   <title>La tienda - CTIN</title>
 
-  <!-- Bootstrap core CSS -->
+  <!-- Bootstrap core CSS 	-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+  <!-- Custom styles for this template 	-->
   <link href="css/shop-homepage.css" rel="stylesheet">
+
+
+
+  <!-- Bootstrap CSS
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap-chosen.css">
+  <link rel="stylesheet" href="styles.css">
+    -->
 
 </head>
 
@@ -43,9 +51,8 @@
 	width: 100%;
 	flex-wrap: wrap;
 	background: rgba(0,0,0,0.7);
-	transform: translateY(100%) translateY(-5px);
+	transform: translateY(100%) translateY(-8px);
 	transition: all 0.2s;
-
 	}
 
 	.buttons{
@@ -91,32 +98,54 @@
 	}
 
 	.orange-juice {
-
 	height: 10px;
 	background-color: Aquamarine;
 	}
 
 	.vidcont{
 	width: 75%;
-	max-width: 1300px;
+	max-width: 1200px;
+	position: fixed;
+	left:8px;
+	overflow: hidden;
+	}
+
+	.vidcontmenu{
+	width: 75%;
+	max-width: 1200px;
 	position: relative;
 	left:8px;
 	overflow: hidden;
 	}
 
 	.vidcont:hover .controls {
-	transform: translateY(0);
+	transform: translateY(-10%);
 	}
+
+	.topleft {
+  position: fixed;
+
+  top: 735px;
+  left: 16px;
+  font-size: 18px;
+  text-align:center;
+  width: 75%;
+}
 
 
 	.sidebar-column{
 	width: 25%;
+	position: sticky;
+
+  	left: 1200px;
+
 	}
 
 
 .containercomplete {
    display: flex;
 }
+
 
 
 .curriculum-item {
@@ -130,15 +159,21 @@
     border: 0;
 }
 
+.lilborder{
+	top: 800px;
+	border: 3px solid #73AD21;
+}
+
 
 
  </style>
 
 
 <body>
+
 <div class="containercomplete">
  	<div class="vidcont">
- 		 <video class="video" src="video.mp4" >  </video>
+		  <video class="video" src="video.mp4" >  </video>
  		 <div class="controls">
 		 			 	<div class="orange-bar">
 		 			 		<div class="orange-juice"></div>
@@ -146,15 +181,21 @@
 		 			 	<div class="buttons">
 		 			 			<button id="play-pause"></button>
 						</div>
-				 	 </div>
- 	</div>
+					  </div>
+	 </div>
+
+<div class="containercomplete ">
+		<div class="vidcont lilborder">
+		</div>
+	</div>
+
 
 	<div class="sidebar-column">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-lg-2">
 				</div>
-				<div class="col-lg-9">
+				<div class="col-lg-10">
 					<h2>Contenido del curso<h2>
 				<div class="sidebar-sticky">
 		            <ul class="nav flex-column">
@@ -206,16 +247,49 @@
 		                <a class="nav-link" href="https://www.youtube.com/watch?v=yY6XnbWnK4o">
 		                  <h5>6.Volumen persistente</h5>
 		                </a>
+					  </li>
+					  <li class="nav-item">
+		                <a class="nav-link" href="https://www.youtube.com/watch?v=yY6XnbWnK4o">
+		                  <h5>7.Test text</h5>
+		                </a>
+					  </li>
+					  <li class="nav-item">
+		                <a class="nav-link" href="https://www.youtube.com/watch?v=yY6XnbWnK4o">
+		                  <h5>7.Test text</h5>
+		                </a>
+					  </li>
+					  <li class="nav-item">
+		                <a class="nav-link" href="https://www.youtube.com/watch?v=yY6XnbWnK4o">
+		                  <h5>7.Test text</h5>
+		                </a>
+					  </li>
+					  <li class="nav-item">
+		                <a class="nav-link" href="https://www.youtube.com/watch?v=yY6XnbWnK4o">
+		                  <h5>7.Test text</h5>
+		                </a>
 		              </li>
-		            </ul>
 
-		            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-		              <span>Saved reports</span>
-		              <a class="d-flex align-items-center text-muted" href="#">
-		                <svg xmlns="http://www.w3.org/2000/svg" class="feather feather-plus-circle" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
-		              </a>
-		            </h6>
-		            <ul class="nav flex-column mb-2">
+		               <li class="nav-item">
+		                <a class="nav-link" href="https://www.youtube.com/watch?v=yY6XnbWnK4o">
+		                  <h5>7.Test text</h5>
+		                </a>
+					  </li>
+					  <li class="nav-item">
+		                <a class="nav-link" href="https://www.youtube.com/watch?v=yY6XnbWnK4o">
+		                  <h5>7.Test text</h5>
+		                </a>
+					  </li>
+					  <li class="nav-item">
+		                <a class="nav-link" href="https://www.youtube.com/watch?v=yY6XnbWnK4o">
+		                  <h5>7.Test text</h5>
+		                </a>
+					  </li>
+					  <li class="nav-item">
+		                <a class="nav-link" href="https://www.youtube.com/watch?v=yY6XnbWnK4o">
+		                  <h5>7.Test text</h5>
+		                </a>
+		              </li>
+
 		            </ul>
           </div>
 				</div>
@@ -224,34 +298,40 @@
 	</div>
 </div>
 
-	<div class="vidcont">
-	 				<div class="row">
-	 					<div class="col-lg-2">
- 					 		<h4>Announcements<h4>
- 					 	</div>
-	 					<div class="col-lg-2">
- 					 		<h4>Overview<h4>
- 					 	</div>
- 						<div class="col-lg-2">
- 					 		<h4>Overview<h4>
- 					 	</div>
- 					 	<div class="col-lg-2">
- 					 		<h4>Q&A<h4>
- 					 	</div>
- 					 	<div class="col-lg-2">
- 					 		<h4>Bookmars<h4>
- 					 	</div>
- 					 	<div class="col-lg-2">
- 					 		<h4>Announcements<h4>
- 					 	</div>
- 					 	</div>
- 					 	</div>
- 			</div>
+<div class="topleft">
+
+		<div>
+		<br>
+		</div>
+	 <div class="row">
+		 <div class="col-lg-1 ">
+			<h5>LP<h5>
+		  </div>
+		 <div class="col-lg-1 ">
+			<h5>Overview<h5>
+		  </div>
+		  <div class="col-lg-1 ">
+			<h5>Q&A<h5>
+		  </div>
+		  <div class="col-lg-1 ">
+			<h5>Bookmars<h5>
+		 </div>
+		 <div class="col-lg-1  ">
+			<h5>Announcements<h5>
+		 </div>
+		 <div class="col-lg-7">
+
+		<div>
+		<br>
+		</div>
+</div>
 
 
- 		</div>
-	</div>
- 	 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
 </body>
 
+
+
 </html>
+
